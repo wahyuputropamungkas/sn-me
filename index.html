@@ -43,7 +43,62 @@
     <span class="ornament ornament-dots"></span>
   </div>
 
-  <div class="papan-biodata">
+  <!-- Tampilan utama: kartu nama -->
+  <section class="view-panel landing-view is-active" id="card-view" aria-labelledby="card-name">
+    <article class="business-card">
+      <div class="card-identity">
+        <span class="card-eyebrow">Hello, saya</span>
+        <div class="card-avatar" aria-hidden="true">SN</div>
+        <div>
+          <p class="card-role">Digital Marketer</p>
+          <p class="card-location"><svg><use href="#ico-map"/></svg> Jakarta, Indonesia</p>
+        </div>
+      </div>
+
+      <div class="card-content">
+        <span class="availability"><i></i> Terbuka untuk kolaborasi</span>
+        <h1 id="card-name">Surati<br>Ningsih.</h1>
+        <p class="card-pitch">Saya membantu brand tumbuh lewat konten yang nyambung, iklan yang terarah, dan strategi digital yang nggak cuma bagus di presentasi—tapi juga terasa hasilnya.</p>
+
+        <ul class="card-skills" aria-label="Keahlian utama">
+          <li>Social Media</li>
+          <li>Paid Ads</li>
+          <li>Content Strategy</li>
+        </ul>
+
+        <div class="card-actions">
+          <button class="action-btn action-primary js-show-cv" type="button">
+            Lihat CV <span aria-hidden="true">↗</span>
+          </button>
+          <button class="action-btn action-secondary js-toggle-contact" type="button" aria-expanded="false" aria-controls="contact-options">
+            Hubungi saya <span aria-hidden="true">+</span>
+          </button>
+        </div>
+
+        <div class="contact-options" id="contact-options" hidden>
+          <a class="contact-option" href="https://wa.me/6281234567890" target="_blank" rel="noopener">
+            <span><svg><use href="#ico-phone"/></svg></span>
+            <small>WhatsApp</small>
+          </a>
+          <a class="contact-option" href="mailto:surati.ningsih@email.com">
+            <span><svg><use href="#ico-mail"/></svg></span>
+            <small>Email</small>
+          </a>
+          <a class="contact-option" href="https://linkedin.com/in/surati-ningsih" target="_blank" rel="noopener">
+            <span><svg><use href="#ico-linkedin"/></svg></span>
+            <small>LinkedIn</small>
+          </a>
+        </div>
+      </div>
+    </article>
+    <p class="landing-note">Strategi yang manusiawi. Eksekusi yang terukur.</p>
+  </section>
+
+  <!-- Tampilan CV: tetap satu halaman, ditampilkan dengan jQuery -->
+  <section class="view-panel cv-view" id="cv-view" aria-label="Curriculum Vitae Surati Ningsih" hidden>
+    <button class="cv-back js-show-card" type="button"><span aria-hidden="true">←</span> Kembali ke kartu nama</button>
+
+    <div class="papan-biodata">
 
     <!-- Sidebar identitas -->
     <aside class="panel panel-identitas panel-interaktif">
@@ -277,7 +332,8 @@
 
     </main>
 
-  </div>
+    </div>
+  </section>
 
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="js/main.js"></script>

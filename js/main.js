@@ -1,18 +1,10 @@
 $(function () {
 
-  // Hover interaktif: zoom + miring (kecuali pengalaman kerja)
+  // Hover interaktif yang ringan dan modern
   $('.item-interaktif').on('mouseenter', function () {
-    var tilt = parseFloat($(this).data('tilt')) || 0;
-    var direction = tilt >= 0 ? 1 : -1;
-    var rotate = direction * (1 + Math.abs(tilt));
-
-    $(this)
-      .addClass('is-hover')
-      .css('transform', 'scale(1.04) rotate(' + rotate + 'deg)');
+    $(this).addClass('is-hover');
   }).on('mouseleave', function () {
-    $(this)
-      .removeClass('is-hover')
-      .css('transform', '');
+    $(this).removeClass('is-hover');
   });
 
   // Pengalaman: hover glow saja, tanpa zoom agar teks tidak terpotong
@@ -36,15 +28,6 @@ $(function () {
     );
   }).on('mouseleave', function () {
     $('.foto').css('transform', '');
-  });
-
-  // Blok section: sedikit miring saat hover (pengalaman tetap stabil agar popup mudah dibaca)
-  $('.blok-interaktif').not('#pengalaman').on('mouseenter', function () {
-    var index = $(this).index();
-    var tilt = index % 2 === 0 ? -0.4 : 0.4;
-    $(this).css('transform', 'rotate(' + tilt + 'deg)');
-  }).on('mouseleave', function () {
-    $(this).css('transform', '');
   });
 
   // Skala otomatis agar muat 1 viewport di desktop

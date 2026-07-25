@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Surati Ningsih — Digital Marketer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&amp;family=Source+Sans+3:wght@400;600&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Icon sprite -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+    <symbol id="ico-user" viewBox="0 0 24 24"><path fill="currentColor" d="M12 12a5 5 0 1 0-5-5 5 5 0 0 0 5 5Zm0 2c-4.42 0-8 2.24-8 5v1h16v-1c0-2.76-3.58-5-8-5Z"/></symbol>
+    <symbol id="ico-briefcase" viewBox="0 0 24 24"><path fill="currentColor" d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2h3a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h3Zm2-2h4v2h-4V5Zm-5 4v9h14V9H5Z"/></symbol>
+    <symbol id="ico-map" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 14.5 9 2.5 2.5 0 0 1 12 11.5Z"/></symbol>
+    <symbol id="ico-clock" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm1 11h4v-2h-3V7h-2v6Z"/></symbol>
+    <symbol id="ico-mail" viewBox="0 0 24 24"><path fill="currentColor" d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Zm0 2 8 5 8-5v12H4V6Z"/></symbol>
+    <symbol id="ico-phone" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24 11.4 11.4 0 0 0 3.6.58 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A16 16 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .58 3.6 1 1 0 0 1-.24 1Z"/></symbol>
+    <symbol id="ico-linkedin" viewBox="0 0 24 24"><path fill="currentColor" d="M4.98 3.5A2.5 2.5 0 1 1 5 8.5a2.5 2.5 0 0 1-.02-5ZM3 9h4v12H3V9Zm7 0h3.8v1.7h.1c.5-1 1.8-2.1 3.7-2.1 4 0 4.7 2.6 4.7 6V21h-4v-5.3c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9V21h-4V9Z"/></symbol>
+    <symbol id="ico-camera" viewBox="0 0 24 24"><path fill="currentColor" d="M9 2 7.2 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-3.2L15 2H9Zm3 14a5 5 0 1 1 5-5 5 5 0 0 1-5 5Z"/></symbol>
+    <symbol id="ico-share" viewBox="0 0 24 24"><path fill="currentColor" d="M18 16a3 3 0 0 0-2.8 2H8.8A3 3 0 1 0 7 16.8 3 3 0 0 0 8 14h6.2A3 3 0 0 0 18 16ZM16 8a3 3 0 0 0-2.8-2H8.8A3 3 0 1 0 7 8.8 3 3 0 0 0 8 6h5.2A3 3 0 0 0 16 8ZM9 17a1 1 0 1 1-1-1 1 1 0 0 1 1 1Zm8-8a1 1 0 1 1-1-1 1 1 0 0 1 1 1Zm-8-8a1 1 0 1 1-1-1 1 1 0 0 1 1 1Z"/></symbol>
+    <symbol id="ico-megaphone" viewBox="0 0 24 24"><path fill="currentColor" d="M18 8a6 6 0 0 1 0 8l-8 4V4l8 4ZM4 9v6h2V9H4Z"/></symbol>
+    <symbol id="ico-chart" viewBox="0 0 24 24"><path fill="currentColor" d="M3 3h2v18H3V3Zm7 8h2v10h-2V11Zm7-4h2v14h-2V7Z"/></symbol>
+    <symbol id="ico-pen" viewBox="0 0 24 24"><path fill="currentColor" d="M3 17.25V21h3.75L17.8 9.94l-3.75-3.75L3 17.25Zm14.7-9.55a1 1 0 0 0 0-1.4l-1.9-1.9a1 1 0 0 0-1.4 0l-1.5 1.5 3.3 3.3 1.5-1.5Z"/></symbol>
+    <symbol id="ico-target" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm0 4a6 6 0 1 1-6 6 6 6 0 0 1 6-6Zm0 3a3 3 0 1 0 3 3 3 3 0 0 0-3-3Z"/></symbol>
+    <symbol id="ico-star" viewBox="0 0 24 24"><path fill="currentColor" d="m12 2 2.9 6.6L22 9.2l-5 4.8L18.2 22 12 18.5 5.8 22 7 14l-5-4.8 7.1-0.6L12 2Z"/></symbol>
+    <symbol id="ico-palette" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-1 19.9 1.5 1.5 0 0 0 1.5-1.5 1 1 0 0 1 1-1h1.5a3.5 3.5 0 0 0 0-7h-1a1.5 1.5 0 0 0-1.5 1.5 1 1 0 0 1-1 1A6 6 0 0 1 12 2Z"/></symbol>
+    <symbol id="ico-search" viewBox="0 0 24 24"><path fill="currentColor" d="M10 2a8 8 0 1 0 4.9 14.3l4.4 4.4 1.4-1.4-4.4-4.4A8 8 0 0 0 10 2Zm0 2a6 6 0 1 1-6 6 6 6 0 0 1 6-6Z"/></symbol>
+    <symbol id="ico-mail-list" viewBox="0 0 24 24"><path fill="currentColor" d="M4 4h16v2H4V4Zm0 4h10v2H4V8Zm0 4h16v2H4v-2Zm0 4h10v2H4v-2Z"/></symbol>
+    <symbol id="ico-building" viewBox="0 0 24 24"><path fill="currentColor" d="M4 21V3h10v18H4Zm12 0V9h4v12h-4ZM8 7h2v2H8V7Zm0 4h2v2H8v-2Zm0 4h2v2H8v-2Zm4-8h2v2h-2V7Zm0 4h2v2h-2v-2Zm0 4h2v2h-2v-2Z"/></symbol>
+    <symbol id="ico-rocket" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2c2 3 2 6 2 6s3 0 6 2c-2 4-5 7-9 9-2-3-2-6-2-6s-3 0-6-2c2-4 5-7 9-9ZM7 17l-2 5 5-2-3-3Z"/></symbol>
+    <symbol id="ico-graduation" viewBox="0 0 24 24"><path fill="currentColor" d="M12 3 1 9l11 6 9-4.9V17h2V9L12 3Zm0 13L5 12v4c0 2.2 3.1 4 7 4s7-1.8 7-4v-4l-7 4Z"/></symbol>
+    <symbol id="ico-badge" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2 9 9l-7 1 5 5-1 7 6-3 6 3-1-7 5-5-7-1-3-7Zm0 4.8L13.5 11h4.3l-3.5 2.5 1.3 4.2L12 15.8 8.4 17.7l1.3-4.2L6.2 11h4.3L12 6.8Z"/></symbol>
+    <symbol id="ico-profile" viewBox="0 0 24 24"><path fill="currentColor" d="M4 4h16a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1Zm2 2v2h12V6H6Zm0 4v8h12v-8H6Z"/></symbol>
+  </svg>
+
+  <div class="papan-biodata">
+
+    <!-- Sidebar identitas -->
+    <aside class="panel panel-identitas panel-interaktif">
+      <div class="identitas-inner">
+        <div class="foto-wrap">
+          <div class="foto">SN</div>
+        </div>
+        <h1>Surati Ningsih</h1>
+        <p class="jabatan">Digital Marketer</p>
+        <p class="ringkas">Strategi digital, kampanye iklan, dan growth brand berbasis data. Pengalaman 5+ tahun.</p>
+
+        <div class="divider"></div>
+
+        <ul class="kontak-cepat">
+          <li class="kontak-item item-interaktif" data-tilt="-1">
+            <span class="k-icon"><svg><use href="#ico-mail"/></svg></span>
+            <div>
+              <span class="k-label">Email</span>
+              <a href="mailto:surati.ningsih@email.com">surati.ningsih@email.com</a>
+            </div>
+          </li>
+          <li class="kontak-item item-interaktif" data-tilt="1">
+            <span class="k-icon"><svg><use href="#ico-phone"/></svg></span>
+            <div>
+              <span class="k-label">WhatsApp</span>
+              <a href="https://wa.me/6281234567890" target="_blank" rel="noopener">+62 812-3456-7890</a>
+            </div>
+          </li>
+          <li class="kontak-item item-interaktif" data-tilt="-1">
+            <span class="k-icon"><svg><use href="#ico-linkedin"/></svg></span>
+            <div>
+              <span class="k-label">LinkedIn</span>
+              <a href="https://linkedin.com/in/surati-ningsih" target="_blank" rel="noopener">/in/surati-ningsih</a>
+            </div>
+          </li>
+          <li class="kontak-item item-interaktif" data-tilt="1">
+            <span class="k-icon"><svg><use href="#ico-camera"/></svg></span>
+            <div>
+              <span class="k-label">Portfolio</span>
+              <a href="https://instagram.com/surati.ningsih" target="_blank" rel="noopener">@surati.ningsih</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- Konten utama -->
+    <main class="panel panel-isi">
+
+      <section class="blok blok-interaktif" id="profil">
+        <h2 class="blok-judul"><svg class="judul-icon"><use href="#ico-profile"/></svg> Profil</h2>
+        <ul class="menu-list">
+          <li class="baris item-interaktif" data-tilt="-1">
+            <span class="item-icon"><svg><use href="#ico-user"/></svg></span>
+            <span class="label">Nama</span>
+            <span class="titik"></span>
+            <span class="value">Surati Ningsih</span>
+          </li>
+          <li class="baris item-interaktif" data-tilt="1">
+            <span class="item-icon"><svg><use href="#ico-briefcase"/></svg></span>
+            <span class="label">Profesi</span>
+            <span class="titik"></span>
+            <span class="value">Digital Marketer</span>
+          </li>
+          <li class="baris item-interaktif" data-tilt="-1">
+            <span class="item-icon"><svg><use href="#ico-map"/></svg></span>
+            <span class="label">Lokasi</span>
+            <span class="titik"></span>
+            <span class="value">Jakarta, Indonesia</span>
+          </li>
+          <li class="baris item-interaktif" data-tilt="1">
+            <span class="item-icon"><svg><use href="#ico-clock"/></svg></span>
+            <span class="label">Pengalaman</span>
+            <span class="titik"></span>
+            <span class="value">5+ tahun</span>
+          </li>
+        </ul>
+        <p class="teks-block">Spesialis digital marketing dengan fokus social media, paid advertising, dan content strategy. Terbiasa menangani multi-klien, mengelola budget iklan, serta menyusun laporan performa.</p>
+      </section>
+
+      <section class="blok blok-interaktif" id="keahlian">
+        <h2 class="blok-judul"><svg class="judul-icon"><use href="#ico-star"/></svg> Keahlian</h2>
+        <ul class="menu-list">
+          <li class="baris item-interaktif" data-tilt="-1">
+            <span class="item-icon"><svg><use href="#ico-share"/></svg></span>
+            <span class="label">Social Media Marketing</span>
+            <span class="titik"></span>
+            <span class="value badge-mahir">Mahir</span>
+          </li>
+          <li class="baris item-interaktif" data-tilt="1">
+            <span class="item-icon"><svg><use href="#ico-megaphone"/></svg></span>
+            <span class="label">Paid Advertising (Meta & Google)</span>
+            <span class="titik"></span>
+            <span class="value badge-mahir">Mahir</span>
+          </li>
+          <li class="baris item-interaktif" data-tilt="-1">
+            <span class="item-icon"><svg><use href="#ico-pen"/></svg></span>
+            <span class="label">Content Strategy & Copywriting</span>
+            <span class="titik"></span>
+            <span class="value badge-mahir">Mahir</span>
+          </li>
+          <li class="baris item-interaktif" data-tilt="1">
+            <span class="item-icon"><svg><use href="#ico-chart"/></svg></span>
+            <span class="label">Google Analytics & Reporting</span>
+            <span class="titik"></span>
+            <span class="value badge-mahir">Mahir</span>
+          </li>
+          <li class="baris item-interaktif" data-tilt="-1">
+            <span class="item-icon"><svg><use href="#ico-target"/></svg></span>
+            <span class="label">Brand Strategy</span>
+            <span class="titik"></span>
+            <span class="value badge-mahir">Mahir</span>
+          </li>
+          <li class="baris item-interaktif" data-tilt="1">
+            <span class="item-icon"><svg><use href="#ico-palette"/></svg></span>
+            <span class="label">Canva & Visual Content</span>
+            <span class="titik"></span>
+            <span class="value badge-mahir">Mahir</span>
+          </li>
+          <li class="baris item-interaktif" data-tilt="-1">
+            <span class="item-icon"><svg><use href="#ico-search"/></svg></span>
+            <span class="label">SEO</span>
+            <span class="titik"></span>
+            <span class="value badge-menengah">Menengah</span>
+          </li>
+          <li class="baris item-interaktif" data-tilt="1">
+            <span class="item-icon"><svg><use href="#ico-mail-list"/></svg></span>
+            <span class="label">Email Marketing</span>
+            <span class="titik"></span>
+            <span class="value badge-menengah">Menengah</span>
+          </li>
+        </ul>
+      </section>
+
+      <section class="blok blok-interaktif" id="pengalaman">
+        <h2 class="blok-judul"><svg class="judul-icon"><use href="#ico-briefcase"/></svg> Pengalaman Kerja</h2>
+
+        <div class="exp-list">
+
+          <article class="exp-item exp-interaktif" tabindex="0" aria-describedby="detail-exp-1">
+            <div class="exp-title">
+              <svg class="exp-icon"><use href="#ico-building"/></svg>
+              <strong>Digital Marketing Specialist</strong>
+              <span aria-hidden="true">·</span>
+              <span>Jakarta</span>
+            </div>
+            <div class="exp-popup" id="detail-exp-1" role="tooltip">
+              <div class="exp-top">
+                <strong>Agency Digital</strong>
+                <span class="exp-tahun">2021 — Sekarang</span>
+              </div>
+              <ul class="exp-points">
+                <li>Mengelola kampanye Meta Ads dan Google Ads untuk 8+ klien dengan total budget iklan Rp500 juta+ per bulan, termasuk setup audience, A/B testing kreatif, dan optimasi berkala.</li>
+                <li>Menyusun content calendar, brief konten, dan strategi social media untuk klien di industri retail, beauty, dan edukasi.</li>
+                <li>Meningkatkan ROAS rata-rata klien sebesar 35% dalam 6 bulan melalui evaluasi funnel dan restrukturisasi campaign.</li>
+                <li>Membuat laporan performa mingguan dan bulanan untuk kebutuhan review internal maupun presentasi ke klien.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="exp-item exp-interaktif" tabindex="0" aria-describedby="detail-exp-2">
+            <div class="exp-title">
+              <svg class="exp-icon"><use href="#ico-share"/></svg>
+              <strong>Social Media Manager</strong>
+              <span aria-hidden="true">·</span>
+              <span>Jakarta</span>
+            </div>
+            <div class="exp-popup" id="detail-exp-2" role="tooltip">
+              <div class="exp-top">
+                <strong>Brand Lokal (F&amp;B)</strong>
+                <span class="exp-tahun">2019 — 2021</span>
+              </div>
+              <ul class="exp-points">
+                <li>Mengelola akun Instagram dan TikTok brand, meningkatkan engagement 180% dan followers 3x lipat dalam 1 tahun.</li>
+                <li>Memproduksi konten visual, copywriting, dan jadwal posting harian/mingguan sesuai brand guideline.</li>
+                <li>Bekerja sama dengan tim sales untuk menjalankan promo, tracking leads, dan konversi dari sosial media.</li>
+                <li>Memantau tren konten F&B dan menyesuaikan strategi agar relevan dengan target market lokal.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="exp-item exp-interaktif" tabindex="0" aria-describedby="detail-exp-3">
+            <div class="exp-title">
+              <svg class="exp-icon"><use href="#ico-rocket"/></svg>
+              <strong>Freelance Digital Marketer</strong>
+              <span aria-hidden="true">·</span>
+              <span>Remote</span>
+            </div>
+            <div class="exp-popup" id="detail-exp-3" role="tooltip">
+              <div class="exp-top">
+                <strong>Startup &amp; Personal Brand</strong>
+                <span class="exp-tahun">2018 — 2019</span>
+              </div>
+              <ul class="exp-points">
+                <li>Menyusun strategi digital marketing dari nol untuk UMKM dan startup, mulai dari riset audience hingga eksekusi kampanye.</li>
+                <li>Mengelola end-to-end: perencanaan konten, iklan berbayar, setup analytics, dan laporan bulanan.</li>
+                <li>Membantu klien membangun presence online dan meningkatkan brand awareness di platform digital.</li>
+              </ul>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <section class="blok blok-interaktif" id="pendidikan">
+        <h2 class="blok-judul"><svg class="judul-icon"><use href="#ico-graduation"/></svg> Pendidikan & Sertifikasi</h2>
+        <ul class="menu-list">
+          <li class="baris baris-block item-interaktif" data-tilt="-1">
+            <div class="exp-top">
+              <span class="label"><svg class="exp-icon"><use href="#ico-graduation"/></svg> S1 Ilmu Komunikasi</span>
+              <span class="value exp-tahun">2014 — 2018</span>
+            </div>
+            <span class="exp-org">Universitas Negeri Jakarta</span>
+          </li>
+          <li class="baris baris-block item-interaktif" data-tilt="1">
+            <div class="exp-top">
+              <span class="label"><svg class="exp-icon"><use href="#ico-badge"/></svg> Google Ads Certification</span>
+              <span class="value exp-tahun">2022</span>
+            </div>
+            <span class="exp-org">Google Skillshop</span>
+          </li>
+          <li class="baris baris-block item-interaktif" data-tilt="-1">
+            <div class="exp-top">
+              <span class="label"><svg class="exp-icon"><use href="#ico-badge"/></svg> Meta Blueprint Certification</span>
+              <span class="value exp-tahun">2021</span>
+            </div>
+            <span class="exp-org">Meta</span>
+          </li>
+        </ul>
+      </section>
+
+    </main>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
